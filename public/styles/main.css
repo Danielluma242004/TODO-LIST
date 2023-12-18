@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Work+Sans&display=swap');
+
+html{
+    font-family: 'Roboto Mono', monospace;
+}
+
+header{
+    background-color: #213555;
+    color:#F0F0F0;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+}
+.btns{
+    justify-content: space-evenly;
+}
+a{
+    text-decoration:none;
+    color: #F0F0F0;
+}
+a:hover{
+    color: #E5D283;;
+}
+
+body{
+    padding: 10;
+    margin: 0;
+}
+.bienvenida{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background-color: #4F709C;
+    color: #E5D283;
+    
+    min-height: 85vh;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.home{
+    font-size: 1.5em;
+}
+.home > p{
+    color: #F0F0F0;
+}
+form{
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #F0F0F0;
+    border: 1px solid black;
+    text-align: left;
+    padding-left: 10px;
+    color: black;
+}
+.agregarItem{
+    padding: 10px;
+}
+#cajaTexto{
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'Roboto Mono', monospace;
+}
+#agregar{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 50%;
+    width:45px;
+    padding: 10px;
+    background-color:#213555;
+    color: #E5D283;
+    cursor: pointer;
+}
+#checkBox{
+    cursor: pointer;
+}
+
+footer{
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}

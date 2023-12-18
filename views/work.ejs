@@ -1,0 +1,20 @@
+<%- include ("partials/header.ejs") %>
+
+<div class="bienvenida">
+    <h2>What jobs do you have for today?</h2>
+    <form action="/work" method="POST">
+        <% for (var i = 0; i < locals.listWorkLarge; i++) { %>
+            <div>
+                <input type="checkbox" id=locals.listWork[i] name=locals.listWork[i]>
+                <label for=locals.listWork[i]><%- locals.listWork[i] %></label>
+                <hr>
+            </div>   
+        <%} %>
+        <div class="agregarItem">
+            <input id="cajaTexto" type="text" name="newTask">
+            <input id="agregar" type="submit" value="+">
+        </div>
+    </form>
+</div>
+
+<%- include ("partials/footer.ejs") %>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+<header>
+    <div class="flex-container">
+        <% const week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        const year = ["January", "February", "March", "April", "May", "June", "July", "Agoust", "Septermber", "October", "November", "December"]
+        const date = (week[new Date().getDay()]+", "+year[new Date().getMonth()]+ " "+ new Date().getDate()); %>
+        <p class="fecha"><%= date %></p>
+        <p class="userName">Hi, Daniel</p>
+    </div>
+
+    <div class="flex-container btns">
+        <a href="/today"><h2>Today's Tasks</h2></a>
+        <a href="/work"><h2>Work's Tasks</h2></a>
+    </div>
+</header>
+<body>
